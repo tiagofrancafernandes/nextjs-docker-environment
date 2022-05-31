@@ -1,0 +1,19 @@
+version: '3'
+services:
+    nextjs-ui:
+        build:
+            context: ./
+        ports:
+            - "3000:3000"
+        container_name: nextjs-ui
+        stdin_open: true
+        volumes:
+            - ./next-app:/usr/src/app/next-app
+            - /usr/src/app/next-app/node_modules
+        networks:
+            - app-network
+
+#Docker Networks
+networks:
+    app-network:
+        driver: bridge
