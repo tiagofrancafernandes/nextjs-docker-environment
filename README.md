@@ -36,6 +36,10 @@ Docker Compose version v2.3.3
 
 ----
 
+## [Change log](changelog.md)
+
+----
+
 ## TODO
 
 - Receber parâmetros por arquivo `.env` (porta, etc)
